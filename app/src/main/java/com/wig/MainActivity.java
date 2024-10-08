@@ -1,7 +1,5 @@
 package com.wig;
 
-import android.animation.*;
-import android.app.*;
 import android.content.*;
 import android.content.res.*;
 import android.graphics.*;
@@ -10,10 +8,10 @@ import android.os.*;
 import android.text.*;
 import android.util.*;
 import android.view.*;
-import android.view.animation.*;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.appbar.AppBarLayout;
 import java.util.*;
 import org.json.*;
@@ -32,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private Button button1;
     private EditText edittext1;
 
-    private Intent url_git = new Intent();
     private AlertDialog.Builder dialog_warn;
 
     @Override
@@ -96,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
         dialog_warn.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface _dialog, int _which) {
-                // Neutral button logic here
             }
         });
 
@@ -104,13 +100,12 @@ public class MainActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.dialog_background);
         dialog.show();
 
-        // Button styling
-        GradientDrawable JEEJFCC = new GradientDrawable();
-        JEEJFCC.setColor(Color.argb(255, 255, 255, 255));
-        JEEJFCC.setCornerRadius(35);
-        RippleDrawable JEEJFCC_RE = new RippleDrawable(new ColorStateList(new int[][]{new int[]{}}, new int[]{Color.argb(25, 0, 0, 0)}), JEEJFCC, null);
-        button1.setBackground(JEEJFCC_RE);
-        if (Build.VERSION.SDK_INT >= 21) {
+        GradientDrawable buttonBackground = new GradientDrawable();
+        buttonBackground.setColor(Color.argb(255, 255, 255, 255));
+        buttonBackground.setCornerRadius(35);
+        RippleDrawable rippleDrawable = new RippleDrawable(new ColorStateList(new int[][]{new int[]{}}, new int[]{Color.argb(25, 0, 0, 0)}), buttonBackground, null);
+        button1.setBackground(rippleDrawable);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             button1.setElevation(5f);
         }
     }
