@@ -21,11 +21,21 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+    - name: Check if gradlew exists
+      id: check_gradlew
+      run: |
+        if [ ! -f gradlew ]; then
+          echo "gradlew not found, generating wrapper..."
+          gradle wrapper
+        else
+          echo "gradlew found."
+        fi
+
     - name: Grant execute permission for gradlew
-      run: chmod +x app/gradlew 
+      run: chmod +x gradlew
 
     - name: Build debug APK with Gradle
-      run: ./app/gradlew assembleDebug 
+      run: ./gradlew assembleDebug
 
     - name: Archive debug APK
       uses: actions/upload-artifact@v3
