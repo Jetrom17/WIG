@@ -24,7 +24,7 @@
         </activity>
         
         <activity
-            android:name=".DebugActivity"
+           <!-- android:name=".DebugActivity" -->
             android:screenOrientation="portrait" />
         
         <provider
