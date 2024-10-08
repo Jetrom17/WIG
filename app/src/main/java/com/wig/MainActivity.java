@@ -15,6 +15,11 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.appbar.AppBarLayout;
 import java.util.*;
 import org.json.*;
+import android.app.AlertDialog; 
+import android.graphics.drawable.GradientDrawable; 
+import android.graphics.drawable.RippleDrawable; 
+import android.content.res.ColorStateList; 
+
 
 public class MainActivity extends AppCompatActivity {
 
