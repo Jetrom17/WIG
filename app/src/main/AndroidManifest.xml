@@ -23,9 +23,7 @@
             </intent-filter>
         </activity>
         
-        <activity
-           <!-- android:name=".DebugActivity" -->
-            android:screenOrientation="portrait" />
+        <!-- A tag DebugActivity foi removida para evitar conflitos -->
         
         <provider
             android:name="androidx.startup.InitializationProvider"
