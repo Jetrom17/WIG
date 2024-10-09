@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.2" type="incidents">
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `ScrollView` layout or its `LinearLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/main.xml"
+            line="25"
+            column="4"
+            startOffset="1043"
+            endLine="25"
+            endColumn="14"
+            endOffset="1053"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/main.xml"
+            line="52"
+            column="8"
+            startOffset="2011"
+            endLine="52"
+            endColumn="16"
+            endOffset="2019"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/main.xml"
+            line="52"
+            column="8"
+            startOffset="2011"
+            endLine="52"
+            endColumn="16"
+            endOffset="2019"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;https://jetrom17.github.io/GhostIDE-Web&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/main.xml"
+            line="59"
+            column="8"
+            startOffset="2251"
+            endLine="59"
+            endColumn="62"
+            endOffset="2305"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Github.io&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/main.xml"
+            line="68"
+            column="6"
+            startOffset="2577"
+            endLine="68"
+            endColumn="30"
+            endOffset="2601"/>
+    </incident>
+
+    <incident
+        id="ExifInterface"
+        severity="warning"
+        message="Avoid using `android.media.ExifInterface`; use `androidx.exifinterface.media.ExifInterface` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/wig/FileUtil.java"
+            line="20"
+            column="8"
+            startOffset="639"
+            endLine="20"
+            endColumn="35"
+            endOffset="666"/>
+    </incident>
+
+    <incident
+        id="SimpleDateFormat"
+        severity="warning"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/wig/FileUtil.java"
+            line="591"
+            column="33"
+            startOffset="19735"
+            endLine="591"
+            endColumn="72"
+            endOffset="19774"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 21">
+        <fix-data conditional="true"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/wig/MainActivity.java"
+            line="113"
+            column="13"
+            startOffset="4681"
+            endLine="113"
+            endColumn="66"
+            endOffset="4734"/>
+    </incident>
+
+</incidents>

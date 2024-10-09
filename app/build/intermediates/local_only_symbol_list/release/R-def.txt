@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorControlHighlight
+color colorControlNormal
+color colorPrimary
+color colorPrimaryDark
+drawable app_icon
+drawable default_image
+drawable dialog_background
+id _app_bar
+id _coordinator
+id _toolbar
+id button1
+id cardview1
+id edittext1
+id linear1
+id linear2
+id vscroll1
+layout main
+string app_name
+style AppTheme
+style AppTheme.AppBarOverlay
+style AppTheme.FullScreen
+style AppTheme.PopupOverlay

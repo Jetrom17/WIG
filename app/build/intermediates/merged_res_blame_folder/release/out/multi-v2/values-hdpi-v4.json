@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.wig.app-mergeReleaseResources-22:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/jeiel/.gradle/caches/8.10.2/transforms/4d6982e731df1ee6e09fb766a9651bf3/transformed/appcompat-1.4.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

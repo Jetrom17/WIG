@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.wig.app-merged_res-24:/drawable-xhdpi_default_image.png.flat",
+        "source": "com.wig.app-main-26:/drawable-xhdpi/default_image.png"
+    },
+    {
+        "merged": "com.wig.app-merged_res-24:/layout_main.xml.flat",
+        "source": "com.wig.app-main-26:/layout/main.xml"
+    },
+    {
+        "merged": "com.wig.app-merged_res-24:/drawable-xhdpi_app_icon.png.flat",
+        "source": "com.wig.app-main-26:/drawable-xhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.wig.app-merged_res-24:/drawable_dialog_background.xml.flat",
+        "source": "com.wig.app-main-26:/drawable/dialog_background.xml"
+    }
+]
