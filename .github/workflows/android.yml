@@ -46,7 +46,7 @@ jobs:
           name: app-debug
       - run: |
           curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument" \
-            -F chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -F chat_id="-1002327390277" \
             -F message_thread_id="2" \
             -F document=@"app-debug.apk" \
             -F caption="APK de debug gerado por ${{ github.actor }}"
